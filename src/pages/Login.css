@@ -1,0 +1,155 @@
+
+.login-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper {
+    width: 350px;
+    background: #fff;
+    text-align: center;
+    padding: 40px 30px 50px 30px;
+    border-radius: 5px;
+    box-shadow: 1px 6px 6px 7px rgb(58 48 48 / 20%);
+}
+.wrapper header {
+    font-size: 35px;
+    font-weight: 600;
+}
+.wrapper form {
+    margin: 40px 0 10px 0;
+}
+
+form .field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+form .field.has-error {
+    animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+    0%, 100% {
+        margin-left: 0;
+    }
+    20%, 80% {
+        margin-left: -12px;
+    }
+    40%, 60% {
+        margin-left: 12px;
+    }
+}
+
+form .field .input-area {
+    position: relative;
+}
+
+form .form-input {
+    height: 50px;
+    width: 100%;
+    padding: 0 45px;
+    outline: none;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+    margin-bottom: 5px;
+    text-transform: none;
+}
+form .field.error .form-input {
+    border-color: #f0061e;
+}
+form .field.is-valid .form-input {
+    border-color: rgb(11, 105, 11);
+}
+form .form-input::placeholder {
+    color: #bfbfbf;
+    font-size: 17px;
+}
+form .field span{
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+form .field .icon {
+    left: 15px;
+    color: #bfbfbf;
+}
+form .field .error-icon {
+    right: 15px;
+    color: #f0061e;
+}
+
+form .field .error-text {
+    color: #f0061e;
+    text-align: left;
+    font-weight: 600;
+}
+form .field .error {
+    display: none;
+}
+
+form .field.error .error {
+    display: block;
+}
+
+form .pass-link {
+    text-align: left;
+    margin-top: -10px;
+}
+form .pass-link .forget-password {
+    font-size: 1.4rem;
+    color:rgb(59, 119, 230);
+    text-decoration: none;
+}
+form .pass-link .forget-password:hover {
+    text-decoration: underline;
+}
+.submit-btn {
+    height: 50px;
+    width: 100%;
+    padding: 0 45px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background: #27ae60;
+    transition: background 0.2s ease;
+}
+.submit-btn:hover {
+    background: #0c252f;
+}
+
+.wrapper .signup-link {
+    font-size: 1.4rem;
+}
+
+.wrapper .signup-link .signup-now {
+    font-size: 1.4rem;
+    color:rgb(59, 119, 230);
+    text-decoration: none;
+}
+.wrapper .signup-link .signup-now:hover {
+    text-decoration: underline;
+}
+
+.wrapper .go-back {
+    color:rgb(59, 119, 230);
+    text-align: right;
+    padding: 10px;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.wrapper .go-back span {
+    font-size: 1.4rem;
+    display: inline-block;
+}

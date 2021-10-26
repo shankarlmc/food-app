@@ -1,0 +1,95 @@
+.shopping-cart {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 5px 8px 31px -2px rgba(1,9,2,0.79);
+    -webkit-box-shadow: 5px 8px 31px -2px rgba(1,9,2,0.79);
+    -moz-box-shadow: 5px 8px 31px -2px rgba(1,9,2,0.79);
+    width: 35rem;
+    background: #fff;
+    opacity: 1.5;
+    z-index: 1;
+}
+
+.shopping-cart.active {
+    right: 2rem;
+    transition: 0.4s linear;
+}
+
+.shopping-cart .box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.shopping-cart .box img {
+    height: 10rem;
+}
+
+.shopping-cart .box .trash-icon {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+    color: #000000;
+    transform: translateY(-50%);
+}
+
+.shopping-cart .box .trash-icon:hover {
+    color: #27ae60;
+}
+.shopping-cart .box .cart-image {
+    border: 1px solid #27ae60;
+    width: 90px;
+    border-radius: 50% 50% 53% 47% / 57% 57% 43% 43%;
+    margin: 0 5px 0 10px;
+}
+.shopping-cart .box .content h3 {
+    color: #130f40;
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.shopping-cart .box .content span {
+    color: #666;
+    font-size: 1.6rem;
+}
+
+.shopping-cart .box .content .quantity {
+    padding-left: 1rem;
+}
+
+.shopping-cart .total {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: #130f40;
+}
+
+.place-order-btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #27ae60;
+    color: black;
+    cursor: pointer;
+    background: none;
+    width: 100%;
+}
+.shopping-cart {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+}
+.place-order-btn:hover{
+    background: #27ae60;
+    color: #fff;
+    border: 0.2rem solid #000000;
+}
