@@ -13,6 +13,11 @@ import Food8 from '../../images/Dishes/Food8.png';
 
 
 function PopularDishes(){
+
+    const handleAddToCart = (item) => {
+        alert('item added to cart');
+    }
+
     return (
         <section className="popular" id="popular">
             <div className="heading">
@@ -36,7 +41,10 @@ function PopularDishes(){
                             <span> (50) </span>
                         </div>
                         <div className="price">$40.00 <span>$50.00</span></div>
-                        <a href="#" className="btn">add to cart</a>
+                        <button
+                            onClick={(e)=>handleAddToCart(1)}
+                            className="btn"
+                        >Add To Cart</button>
                     </div>
                 </div>
 
@@ -56,7 +64,10 @@ function PopularDishes(){
                             <span> (50) </span>
                         </div>
                         <div className="price">$40.00 <span>$50.00</span></div>
-                        <a href="#" className="btn">add to cart</a>
+                        <button
+                            onClick={(e)=>handleAddToCart(1)}
+                            className="btn"
+                        >Add To Cart</button>
                     </div>
                 </div>
 
@@ -76,7 +87,10 @@ function PopularDishes(){
                             <span> (50) </span>
                         </div>
                         <div className="price">$40.00 <span>$50.00</span></div>
-                        <a href="#" className="btn">add to cart</a>
+                        <button
+                            onClick={(e)=>handleAddToCart(1)}
+                            className="btn"
+                        >Add To Cart</button>
                     </div>
                 </div>
 
@@ -96,7 +110,10 @@ function PopularDishes(){
                             <span> (50) </span>
                         </div>
                         <div className="price">$40.00 <span>$50.00</span></div>
-                        <a href="#" className="btn">add to cart</a>
+                        <button
+                            onClick={(e)=>handleAddToCart(1)}
+                            className="btn"
+                        >Add To Cart</button>
                     </div>
                 </div>
 
@@ -116,7 +133,10 @@ function PopularDishes(){
                             <span> (50) </span>
                         </div>
                         <div className="price">$40.00 <span>$50.00</span></div>
-                        <a href="#" className="btn">add to cart</a>
+                        <button
+                            onClick={(e)=>handleAddToCart(1)}
+                            className="btn"
+                        >Add To Cart</button>
                     </div>
                 </div>
 
@@ -136,7 +156,10 @@ function PopularDishes(){
                             <span> (50) </span>
                         </div>
                         <div className="price">$40.00 <span>$50.00</span></div>
-                        <a href="#" className="btn">add to cart</a>
+                        <button
+                            onClick={(e)=>handleAddToCart(1)}
+                            className="btn"
+                        >Add To Cart</button>
                     </div>
                 </div>
 
@@ -156,7 +179,10 @@ function PopularDishes(){
                             <span> (50) </span>
                         </div>
                         <div className="price">$40.00 <span>$50.00</span></div>
-                        <a href="#" className="btn">add to cart</a>
+                        <button
+                            onClick={(e)=>handleAddToCart(1)}
+                            className="btn"
+                        >Add To Cart</button>
                     </div>
                 </div>
 
@@ -176,7 +202,10 @@ function PopularDishes(){
                             <span> (50) </span>
                         </div>
                         <div className="price">$40.00 <span>$50.00</span></div>
-                        <a href="#" className="btn">add to cart</a>
+                        <button
+                            onClick={(e)=>handleAddToCart(1)}
+                            className="btn"
+                        >Add To Cart</button>
                     </div>
                 </div>
             </div>
